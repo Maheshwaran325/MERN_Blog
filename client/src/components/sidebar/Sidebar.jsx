@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./sidebar.css";
+// import logo from './client/public/images/Blogly.png';
 
 export default function Sidebar() {
   const [cats, setCats] = useState([]);
@@ -16,13 +17,11 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT ME</span>
-        <img className="about_img"
-          src="https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg"
-          alt=""/>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
+        <span className="sidebarTitle">ABOUT COMPANY</span>
+        <img className="about_img" src="../images/blog.png" alt=""/>
+        <p className="about_para">
+        The best ideas can change who we are. Medium is where those ideas take shape, take off, and spark powerful conversations. We’re an open platform where over 100 million readers come to find insightful and dynamic thinking. Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface. Our purpose is to spread these ideas and deepen understanding of the world.
+
         </p>
       </div>
       <div className="sidebarItem">
